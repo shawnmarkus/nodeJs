@@ -2,8 +2,8 @@ const MongoClient = require("mongodb").MongoClient;
 const url2 = "mongodb://127.0.0.1:27017/";
 // using mongoDB
 // 1st way
-const client = new MongoClient(url2);
 (async function () {
+  const client = new MongoClient(url2);
   try {
     // console.log("trying to connect");
     // 1st way ----------------------------------------------------------------------------
@@ -58,6 +58,8 @@ const client = new MongoClient(url2);
     // --------------------------------------------------------------------------------------------------------------------
   } catch (err) {
     console.log(err);
+  } finally {
+    client.close();
   }
 })();
 // -------------------------------------------------------------------------------------------------------------------------
