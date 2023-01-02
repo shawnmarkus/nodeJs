@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "mongoose": "^6.7.4"
+    "mongoose": "^6.7.4",
+    "vue-router": "^4.1.6"
   }
 }
